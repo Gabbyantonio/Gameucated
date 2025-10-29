@@ -165,3 +165,35 @@ document.getElementById("prevBtn").addEventListener("click", () => {
 });
 
 updateSlider();
+(function () {
+  const featureSection = document.getElementById('featureVideo');
+  if (!featureSection) return;
+
+  const rawUrl = featureSection.dataset.youtube?.trim();
+  const iframe = document.getElementById('featureIframe');
+  const errBox = document.getElementById('videoError');
+
+  function extractYouTubeID(url) {
+    const regex = /(?:v=|youtu\.be\/|embed\/)([A-Za-z0-9_-]{6,})/;
+    const match = url.match(regex);
+    return match ? match[1] : null;
+  }
+
+  const id = extractYouTubeID(rawUrl);
+  if (!id) {
+    errBox.hidden = false;
+    return;
+  }
+
+  iframe.src = `https://www.youtube.com/embed/${id}?rel=0&modestbranding=1`;
+})();
+<script>
+  const currentPage = window.location.pathname.split("/").pop();
+  document.querySelectorAll(".sentinels-nav a").forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+</script>
