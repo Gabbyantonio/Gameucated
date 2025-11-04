@@ -1369,3 +1369,418 @@ footer {
   border-bottom: 2px solid #ff1e1e;
   padding-bottom: 3px;
 }
+
+/* ===== COACH SHOWCASE ===== */
+.coach-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 60px;
+  gap: 80px;
+  background: radial-gradient(circle at top left, #0a0a0a, #000);
+  min-height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.coach-info {
+  flex: 1;
+  max-width: 500px;
+  z-index: 2;
+  animation: fadeInLeft 0.6s ease;
+}
+
+.coach-info h2 {
+  color: #ff3333;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.coach-info h4 {
+  color: #ddd;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.coach-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.coach-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.coach-photo img {
+  width: 380px;
+  height: 380px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+  animation: fadeInRight 0.6s ease;
+}
+
+/* Navigation */
+.arrow-nav {
+  position: absolute;
+  bottom: 80px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.arrow-nav button {
+  background: transparent;
+  border: 2px solid #ff3333;
+  color: #ff3333;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.arrow-nav button:hover {
+  background: #ff3333;
+  color: white;
+}
+
+#counter {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.coach-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 60px;
+  gap: 80px;
+  background: radial-gradient(circle at top left, #0a0a0a, #000);
+  min-height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.coach-photo img {
+  width: 380px; /* ✅ your original size */
+  height: 380px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+  transition: opacity 0.3s ease;
+}
+
+.arrow-nav {
+  position: absolute;
+  bottom: 80px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.arrow-nav button {
+  background: transparent;
+  border: 2px solid #ff3333;
+  color: #ff3333;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.arrow-nav button:hover {
+  background: #ff3333;
+  color: white;
+}
+/* === COACHES PAGE === */
+.coach-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #000;
+  color: #fff;
+  padding: 100px 50px;
+  min-height: 90vh;
+}
+
+.coach-info {
+  max-width: 600px;
+  animation: fadeInLeft 0.7s ease-in-out;
+}
+
+.coach-info h2 {
+  color: #ff3333;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.coach-info h4 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.coach-info p {
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.coach-photo img {
+  width: 450px;
+  height: 450px;
+  border-radius: 15px;
+  object-fit: cover;
+  border: 2px solid #ff3333;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+  transition: opacity 0.3s ease, box-shadow 0.4s ease-in-out;
+  animation: neonPulse 3s infinite alternate;
+}
+
+@keyframes neonPulse {
+  0% {
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.9), 0 0 100px rgba(255, 0, 0, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+  }
+}
+
+.arrow-nav {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.arrow-nav button {
+  background: #ff3333;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.arrow-nav button:hover {
+  background: #ff5555;
+}
+
+#counter {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.coach-photo img.fade {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.coach-photo img.fade {
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.coach-photo img.pulse {
+  animation: neonPulse 0.7s ease-in-out;
+}
+
+/* neonPulse if you use the glow effect */
+@keyframes neonPulse {
+  0% { box-shadow: 0 0 12px rgba(255,0,0,0.5); }
+  50% { box-shadow: 0 0 48px rgba(255,0,0,0.95), 0 0 80px rgba(255,0,0,0.35); }
+  100% { box-shadow: 0 0 12px rgba(255,0,0,0.5); }
+}
+/* ========== AUTH PAGE (Login / Signup) ========== */
+.auth-page {
+  overflow-x: hidden;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* 🌌 Background image with blur & dark fade */
+.auth-bg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://similar-fuchsia-14ctf5yrgj.edgeone.app/GEC-BANNER-NEW.jpg") center/cover no-repeat;
+  filter: brightness(0.4) blur(6px);
+  z-index: -1;
+}
+
+/* ✨ Layout */
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  min-height: 100vh;
+}
+
+/* 🧠 Motivational quotes */
+.auth-quotes {
+  flex: 1;
+  text-align: left;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  padding-right: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#quote-text {
+  transition: opacity 0.6s ease;
+}
+
+/* 🧩 Auth Box (Login / Signup) */
+.auth-box {
+  flex: 1;
+  max-width: 420px;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 40px 35px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  animation: slideIn 0.8s ease-out;
+}
+
+.auth-box h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff4646;
+}
+
+.auth-form {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-form.active {
+  display: flex;
+}
+
+.auth-form input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.auth-form input:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.auth-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ff4444, #ff7f50);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+}
+
+.switch-text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.switch-text a {
+  color: #ff6666;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.switch-text a:hover {
+  text-decoration: underline;
+}
+
+/* 🌈 Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 📱 Responsive Fixes */
+@media (max-width: 900px) {
+  .auth-container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .auth-quotes {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    padding-right: 0;
+  }
+
+  .auth-box {
+    max-width: 90%;
+  }
+}
+/* 🔧 Fix gap between partners & footer */
+.partners {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.main-footer {
+  margin-top: 0;
+  padding-top: 4px;
+}
+
