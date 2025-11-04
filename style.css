@@ -1773,14 +1773,4 @@ footer {
     max-width: 90%;
   }
 }
-/* 🔧 Fix gap between partners & footer */
-.partners {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.main-footer {
-  margin-top: 0;
-  padding-top: 4px;
-}
 
